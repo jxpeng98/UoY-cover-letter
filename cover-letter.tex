@@ -1,0 +1,50 @@
+\documentclass{uoycoverletter}
+% required package
+\usepackage{lipsum}
+\usepackage{palatino}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\definecolor{uoycolor}{cmyk}{0.78,0.61,0.49,0.50}
+\definecolor{linkcolour}{cmyk}{0.78,0.61,0.49,0.50}
+% define some information
+\def\name{Firstname Surname}
+\def\objective{\textsc{To obtain a position as a graduate software engineer.}}
+\def\ToAddress{%
+\textbf{Some Department}\\
+\textbf{Some University}\\ 
+Some Address, Postcode
+}
+
+\begin{document}
+\setmainfont{Palatino}
+\coverletterheader[department = {\textbf{\color{uoycolor}Department Name}},
+university = {\textbf{\color{uoycolor}University Name}},
+address = {Heslington Road, York},
+postcode = {YO10 5DD},
+phone = {+44-xxxxxxxxx},
+email = {xx1234@york.ac.uk},
+website = {https://example.com},
+logo = {uoylogo.png}]
+
+%% 
+\vspace{0.25in}
+\today
+\vspace{0.15in}
+
+%\objective
+
+%% addressee
+\ToAddress
+
+Dear Application Committee,
+
+%% body
+\lipsum[1-2]
+
+% back matter
+Sincerely,
+
+\vspace{0.15in}
+
+\name
+\end{document}

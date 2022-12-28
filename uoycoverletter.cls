@@ -34,11 +34,16 @@
 \RequirePackage{multirow}
 \RequirePackage{tabularx}
 \RequirePackage{tabu}
+\RequirePackage{lastpage}
+\usepackage{blindtext}
 %% ----- parent class -----
 \LoadClass[letterpaper]{letter}
 %% Define page layout
 \RequirePackage[margin=1in]{geometry}
-    \pagestyle{empty}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
     \setlength{\parindent}{0pt}
     \setlength{\parskip}{\baselineskip}
 
